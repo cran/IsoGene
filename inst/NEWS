@@ -1,0 +1,7 @@
+1.0-12
+	o fix ff calls (Florian Klinglmueller)
+1.0-11
+	o bug fix IsoTestSAM
+1.0-10
+	o dependency on ff (>=2.0.0)
+	
