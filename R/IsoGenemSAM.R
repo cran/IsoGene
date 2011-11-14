@@ -11,7 +11,7 @@ IsoGenemSAM <- function(x, y, fudge.factor){
     unx <- unique(x)
     
     ydf <- as.data.frame(t(y))
-    y.m <- do.call("cbind", unclass(by(ydf, x, mean)))
+    y.m <- do.call("cbind", unclass(by(ydf, x, colMeans)))
     
     y.m.tot <- matrix(rep(rowMeans(y), length(x)), ncol = length(x))
     
@@ -52,8 +52,8 @@ IsoGenemSAM <- function(x, y, fudge.factor){
        
     Esquare <- (SST0-SSIS.dir)/(SST0+fudge.factor[[1]])
     n.pSum <- sum(n.p)
-    w <- (iso.u[,n.g] - y.m[,1]) / (sqrt(2*SST/(n.pSum-n.g)/(n.g-1)) + fudge.factor[[2]])
-    w.c <- (iso.u[,n.g] - iso.u[,1]) / (sqrt(2*SST/(n.pSum-n.g)/(n.g-1)) + fudge.factor[[3]])
+    w <- (iso.u[,n.g] - y.m[,1]) / (sqrt(SST/(n.pSum-n.g)*(1/n.p[1] + 1/n.p[n.g])) + fudge.factor[[2]])
+    w.c <- (iso.u[,n.g] - iso.u[,1]) / (sqrt(SST/(n.pSum-n.g)*(1/n.p[1] + 1/n.p[n.g])) + fudge.factor[[3]])
     m <- (iso.u[,n.g] - iso.u[,1]) / (sqrt(SSIS.dir/(n.pSum-n.g)) + fudge.factor[[4]])
     i <- (iso.u[,n.g] - iso.u[,1]) / (sqrt(SSIS.dir/(n.pSum - apply(iso.u, 1, function(x) length(unique(x))))) + fudge.factor[[5]])
   

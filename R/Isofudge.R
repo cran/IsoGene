@@ -11,8 +11,10 @@ xfudge <- function(x.dif, si2) {
     k0 <- xs.perc.gr == ii
     xs.mad[,ii] <- apply(x.dif[k0]/outer(si2[k0],xs.alpha,"+"),2,mad, constant = 1)
   }
-  xcv <- function(x) sqrt(var(x)) / mean(x)   # CV
-  xs.cv <- apply(xs.mad, 1, xcv)
+  xcv <- function(x) sqrt(var(x)) 
+  xs.cv.sd <- apply(xs.mad, 1, xcv)
+  xs.cv.m <- rowMeans(xs.mad)
+  xs.cv <- xs.cv.sd/xs.cv.m
   xfudge <- xs.alpha[sort.list(xs.cv)[1]]
   return(xfudge)
 }
@@ -32,7 +34,7 @@ Isofudge <- function(x,y){
     unx <- unique(x) # compute once
     
     ydf <- as.data.frame(t(y))
-    y.m <- do.call("cbind", unclass(by(ydf, x, mean)))
+    y.m <- do.call("cbind", unclass(by(ydf, x, colMeans)))
     
     y.m.tot <- matrix(rep(rowMeans(y), length(x)), ncol = length(x))
 
@@ -81,10 +83,10 @@ Isofudge <- function(x,y){
     E2.si2 <- sqrt(SST0)
     
     W.dif <- iso.u[,n.g] - y.m[,1]
-    W.si2 <- sqrt(2*SST/(sum(n.p)-n.g)/(n.g-1)) 
+    W.si2 <- sqrt(SST/(sum(n.p)-n.g)*(1/n.p[1] + 1/n.p[n.g])) 
     
     W.C.dif <- iso.u[,n.g] - iso.u[,1]
-    W.C.si2 <- sqrt(2*SST/(sum(n.p)-n.g)/(n.g-1)) 
+    W.C.si2 <- sqrt(SST/(sum(n.p)-n.g)*(1/n.p[1] + 1/n.p[n.g])) 
     
     M.dif <- iso.u[,n.g] - iso.u[,1]
     M.si2 <- sqrt(SSIS.dir/(sum(n.p)-n.g)) 
