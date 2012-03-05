@@ -1,5 +1,6 @@
-3bbfd557e9606bcfbb22294caa7497ad *DESCRIPTION
+31c98da6f902e37dae643f5374076899 *DESCRIPTION
 02af69bb4ba4b5dbe503c3f38bdf29d7 *NAMESPACE
+f50d891683b95ab899977ab551178f08 *NEWS
 61ff3152003fafb64f503dbd3308c432 *R/IsoBHPlot.R
 218f59b31f1fe39935493b33369dd3c2 *R/IsoGene1.R
 f63c508243bf080948a0c0407d0b690e *R/IsoGenem.R
@@ -14,16 +15,11 @@ d80300dea39c71b68ce4edcba73c777f *R/IsoRawp.R
 99f19b3fd4b1b2a580cab9f9d06e9173 *R/IsomaxT.R
 a7023a11811b65a90f6a8c22727efb76 *R/IsopvaluePlot.R
 83f2b1bfecf6c7c8f1139a62991b39d6 *R/Isoqqstat.R
-997c4fd27fa52201ff02e4a034c8da1e *R/Isoqval.R
-56186a03db7d00a9507ce0b8f7a10316 *data/dopamine.rda
-0a2f5ea92b22c48f48aeff6a34354431 *data/exampleData.rda
-f50d891683b95ab899977ab551178f08 *inst/NEWS
+14ef6181b37676a6e046bc21da164c29 *R/Isoqval.R
+3af3074884a50877facccd16cd8e82c5 *data/dopamine.rda
+bb37631d6072a47b3c845c9976d3e627 *data/exampleData.rda
 5266282846a870b57751669cf41f1721 *inst/doc/IsoGene.Rnw
-627ecee22b8045bc924f350cf7b02dd1 *inst/doc/IsoGene.pdf
-e6f1c75617c6f3d6ee3420500dfef66c *inst/doc/mybook4.cls
-53f674d76fe1548ff5b2f934e316090b *inst/doc/psfig.sty
-b6cf193e0fef599e5b3e2e195fa1e565 *inst/doc/pupdn1b.png
-62bb3a143221b7a800e48c9ba6ad92fa *inst/doc/stat1a.png
+6236fd734530cea40b3627ad0ad48c96 *inst/doc/IsoGene.pdf
 22e2874ad59aa0817871b913ca06d998 *man/IsoBHPlot.Rd
 bab2ed980fc50a079921d1c74bfb7177 *man/IsoGene.package.Rd
 8be4cf76a773bc686f7974a02ecfa063 *man/IsoGene1.Rd
@@ -42,3 +38,8 @@ e1bec68bce62d09ca42f7743dde54021 *man/IsomaxT.Rd
 d61db98b01a6369a218ae2939e75b3c5 *man/Isoqval.Rd
 86623ac44b070c78de6e3fd7527e77e2 *man/dopamine.Rd
 68f3dfb418fa1af8079bbcfb8c030f00 *man/exampleData.Rd
+5266282846a870b57751669cf41f1721 *vignettes/IsoGene.Rnw
+e6f1c75617c6f3d6ee3420500dfef66c *vignettes/mybook4.cls
+53f674d76fe1548ff5b2f934e316090b *vignettes/psfig.sty
+b6cf193e0fef599e5b3e2e195fa1e565 *vignettes/pupdn1b.png
+62bb3a143221b7a800e48c9ba6ad92fa *vignettes/stat1a.png
