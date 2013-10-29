@@ -12,7 +12,7 @@ IsoRawp(x, y, niter, progressBar=TRUE)
   \item{x}{numeric vector containing the dose levels}
   \item{y}{a data frame of the gene expression with Probe IDs as row names}
   \item{niter}{number of permutations to use}
-  \item{progressBar}{to enable or disable progress bar; default is TRUE and setting it as FALSE, when problems with tcltk package 	dependecy occur, solves the problem}
+  \item{progressBar}{to enable or disable progress bar; default is TRUE and setting it as FALSE, when problems with tcltk package dependecy occurs, solves the problem}
 }
 \details{
 The number of permutations to use can be chosen based on the number of
@@ -48,6 +48,9 @@ L. (editors), (2012), Springer.
 Testing for Trend in Dose-Response Microarray Experiments: a Comparison
 of Testing Procedures, Multiplicity, and Resampling-Based Inference, Lin
 et al. 2007, Stat. App. in Gen. & Mol. Bio., 6(1), article 26.
+
+IsoGene: An R Package for Analyzing Dose-response Studies in Microarray Experiments, Pramana S., Lin D., Haldermans P., Shkedy Z., Verbeke T., De Bondt A., Talloen W., Goehlmann H., Bijnens L. 2010, R Journal 2/1. 
+
 }
 
 \author{Lin et al.}

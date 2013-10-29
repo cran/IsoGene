@@ -36,6 +36,9 @@ Lin D., Shkedy Z., Yekutieli D., Amaratunga D., and Bijnens,
 L. (editors). (2012) Modeling Dose-response Microarray
 Data in Early   Drug Development Experiments Using 
 R. Springer.
+
+IsoGene: An R Package for Analyzing Dose-response Studies in Microarray Experiments, Pramana S., Lin D., Haldermans P., Shkedy Z., Verbeke T., De Bondt A., Talloen W., Goehlmann H., Bijnens L. 2010, R Journal 2/1. 
+
 }
 
 
@@ -50,7 +53,8 @@ R. Springer.
  \donttest{
   x <- c(rep(1,3),rep(2,3),rep(3,3))
   y1 <- matrix(rnorm(4500, 1,1),500,9) ## 500 genes with no trends
-  y2 <- matrix(c(rnorm(1500, 1,1),rnorm(1500,2,1),rnorm(1500,3,1)),500,9) ## 500 genes with increasing trends
+  y2 <- matrix(c(rnorm(1500, 1,1),rnorm(1500,2,1),
+        rnorm(1500,3,1)),500,9) ## 500 genes with increasing trends
   y <- data.frame(rbind(y1, y2)) ##y needs to be a data frame  
 SAM.obj <- IsoTestSAM(x, y, fudge="pooled", niter=50, FDR=0.05, stat="E2") 
 }
