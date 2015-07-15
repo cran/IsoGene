@@ -1,5 +1,5 @@
-f28bec486e03eadf8ee3c34941ea6771 *DESCRIPTION
-6c9637e6257dbb03e358ca94c93bc346 *NAMESPACE
+5c78331abeecb323ffcd4c05768fada6 *DESCRIPTION
+ef71f74b2687afacad0cfdbb6efebabf *NAMESPACE
 d1584be825a97af883a0eeac11c4e7d3 *NEWS
 61ff3152003fafb64f503dbd3308c432 *R/IsoBHPlot.R
 218f59b31f1fe39935493b33369dd3c2 *R/IsoGene1.R
@@ -16,9 +16,9 @@ c05e06de688c9f599d32563dde3bbcf5 *R/IsoRawp.R
 a7023a11811b65a90f6a8c22727efb76 *R/IsopvaluePlot.R
 83f2b1bfecf6c7c8f1139a62991b39d6 *R/Isoqqstat.R
 14ef6181b37676a6e046bc21da164c29 *R/Isoqval.R
-db0866a2196020c36815e8a5ce310ec6 *data/dopamine.rda
-3675b3d4a32c49d1a17c3556fde75829 *data/exampleData.rda
-abf203c12dfb717baae5542bef893ebc *inst/doc/IsoGene.pdf
+8524f3fe0f76d343c4fff9255e263938 *data/dopamine.rda
+52003e6127c4732b27b7a8d93d07b3f1 *data/exampleData.rda
+6eb288095df344d452c7dd5723a19cea *inst/doc/IsoGene.pdf
 5458c8f4bcdeae3583fcb07e4febbc4b *man/IsoBHPlot.Rd
 e8b48f24d426784afc3a4c4d31592639 *man/IsoGene.package.Rd
 a8f61c9285c76328e16aed0b320e5913 *man/IsoGene1.Rd
